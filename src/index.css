@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Markdown Custom Prose Styling */
+.prose-custom {
+  line-height: 1.625;
+  color: #334155;
+}
+
+.dark .prose-custom {
+  color: #cbd5e1;
+}
+
+.prose-custom h1 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.dark .prose-custom h1 {
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+.prose-custom h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.25rem;
+}
+
+.dark .prose-custom h2 {
+  color: #f1f5f9;
+  border-color: #1e293b;
+}
+
+.prose-custom h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.dark .prose-custom h3 {
+  color: #e2e8f0;
+}
+
+.prose-custom p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.prose-custom a {
+  color: #4f46e5;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.dark .prose-custom a {
+  color: #818cf8;
+}
+
+.prose-custom a:hover {
+  color: #4338ca;
+}
+
+.dark .prose-custom a:hover {
+  color: #6366f1;
+}
+
+.prose-custom ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.prose-custom ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.prose-custom li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose-custom code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.dark .prose-custom code {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+.prose-custom pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose-custom pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-weight: normal;
+  font-size: inherit;
+}
+
+.prose-custom blockquote {
+  border-left: 4px solid #cbd5e1;
+  padding-left: 1rem;
+  color: #64748b;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.dark .prose-custom blockquote {
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.prose-custom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose-custom th,
+.prose-custom td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.dark .prose-custom th,
+.dark .prose-custom td {
+  border-color: #334155;
+}
+
+.prose-custom th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.dark .prose-custom th {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.prose-custom tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.dark .prose-custom tr:nth-child(even) {
+  background-color: rgba(15, 23, 42, 0.3);
+}
+
+.prose-custom hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.dark .prose-custom hr {
+  border-color: #334155;
+}
